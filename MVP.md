@@ -31,4 +31,3 @@ With the languages I will need to:
 5. Alerts
 6. A responsive page using HTML and CSS.
 7. Fun colors! Possibly a backdrop that will remind you of the show "Saved by the Bell"
-.
