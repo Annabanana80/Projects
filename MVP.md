@@ -14,7 +14,7 @@ Stretch goals:
 	a. The cards will either have to be one down or up or the same number/face/ace.
 2. There will be three timers in place for the player to click on; easy, medium, and sadistic.
 3. Make the background a very obnoxious late 80's/early 90's theme with neon colors, triangles, squiggly lines, etc.
-4. Cards will fall randomly each time and in a different place/position.
+4. Cards will fall randomly each time and in a different place/position.----priority
 
 Languages needed:
 
