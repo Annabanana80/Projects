@@ -1,3 +1,11 @@
 body {
 	background: url("https://s-media-cache-ak0.pinimg.com/236x/b3/30/0a/b3300acb1f351fbdfc809b66b43554e4.jpg");
 }
+h1, h3, p{
+	text-align: center;
+}
+button {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
