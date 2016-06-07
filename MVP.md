@@ -22,10 +22,11 @@ Languages needed:
 
 With the languages I will need to:
 
-1. Use DOM manipulation to generate the cards
+1. Use DOM manipulation in conjunction with loops to generate the cards
 2. Use advanced (to me anyway) CSS to animate the cards
 3. Either Vanilla JS or jQuery--depending on my mood.
 4. Click events.
 5. Alerts
 6. A responsive page using HTML and CSS.
 7. Fun colors! Possibly a backdrop that will remind you of the show "Saved by the Bell"
+.
