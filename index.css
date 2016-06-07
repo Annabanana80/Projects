@@ -21,6 +21,9 @@ button {
 	display: block;
 	font-family: 'Monofett', cursive;
 	font-size: 20px;
+	border-radius: 20px;
+	background-color: deeppink;
+	
 }
 #timer {
 	height: 50px;
