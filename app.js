@@ -9,4 +9,4 @@
 //TL/DR: When the button is clicked the following should happen:
 	//Cards are generated and thrown randomly onto the page
 	//The timer starts counting download
-	
+//To win, the player must click and pick up all of the cards before the timer hits 00:00:00. 

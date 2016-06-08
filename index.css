@@ -36,3 +36,7 @@ button {
 	text-align: center;
 	font-family: 'Monofett', cursive;
 }
+#board{
+	max-width: 1000px;
+	max-height: 1000px;
+}
