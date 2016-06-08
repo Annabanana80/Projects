@@ -8,5 +8,38 @@
 
 //TL/DR: When the button is clicked the following should happen:
 	//Cards are generated and thrown randomly onto the page
-	//The timer starts counting download
-//To win, the player must click and pick up all of the cards before the timer hits 00:00:00. 
+	//The timer starts counting down
+//To win, the player must click and pick up all of the cards before the timer hits 00:00:00.
+
+$(document).ready(function(){
+	console.log("Play");
+	})
+
+var $myButton = $('button');
+$($myButton).click(function(event){
+	console.log("play me");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//code that didn't work:
+//$(document).ready(function(){
+//	console.log("Play");
+//	})-------------------I kept getting an Uncaught ReferenceError that $ was not defined even though I put the code to enable jQuery into my HTML, saved, and refereshed both pages.
+//var $myButton = $('button');
+//$($myButton).click(function(event){
+//	console.log("play me");
+//})----This code was from class and I wrote it down in my notebook. I was just trying to get the darn button to work and it did notthing.
