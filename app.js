@@ -13,8 +13,6 @@
 $(document).ready(function(){
 	$('button').click(function(){  //this ensures that my button works. It worked!
 		console.log("Play");
-
-	});
 	var card = $('#card');
 	for (var i = 1; i < 14; i++) {
 		var newCard = $('<div>');
@@ -41,6 +39,8 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
+
+	});
 })
 
 //Just get one card onto the page
