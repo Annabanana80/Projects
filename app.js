@@ -12,19 +12,19 @@
 //To win, the player must click and pick up all of the cards before the timer hits 00:00:00.
 $(document).ready(function(){
 	$('button').click(function(){  //this ensures that my button works. It worked!
-		console.log("play me");
-	});
-})
-
-//Just get one card onto the page
-var $board=$('#board');
-var card = function (){
+	var $board=$('#board');
+	var card = function (){
 	for (var i=0; i<52; i++){
 		var $card=$('<div>');
 		$card.html('img src="2_of_clubs.png"/>');
 		$board.append($card);
 	}
-};
+};	
+	});
+})
+
+//Just get one card onto the page
+
 
 
 
