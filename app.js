@@ -16,18 +16,31 @@ $(document).ready(function(){
 
 	});
 	var card = $('#card');
-	for (var i = 2; i < 10; i++) {
+	for (var i = 1; i < 14; i++) {
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-	for (var i=0; i< aces.length; i++) {
-		var aces = $('<div>');
-		aces.css('background-image', 'url(PlayingCards/PNG/ace_of' + i + '.png)');
-		aces.addClass('card');
-		card.append(aces);
-	}
+	var card = $('#card');
+	for (var i = 1; i < 14; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_diamonds.png)');
+		newCard.addClass('card');
+		card.append(newCard);
+	};
+	for (var i = 1; i < 14; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_spades.png)');
+		newCard.addClass('card');
+		card.append(newCard);
+	};
+	for (var i = 1; i < 14; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_hearts.png)');
+		newCard.addClass('card');
+		card.append(newCard);
+	};
 })
 
 //Just get one card onto the page
