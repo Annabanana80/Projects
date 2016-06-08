@@ -11,14 +11,6 @@
 	//The timer starts counting down
 //To win, the player must click and pick up all of the cards before the timer hits 00:00:00.
 
-$(document).ready(function(){
-	console.log("Play");
-	})
-
-var $myButton = $('button');
-$($myButton).click(function(event){
-	console.log("play me");
-})
 
 
 
