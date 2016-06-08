@@ -16,9 +16,16 @@ $(document).ready(function(){
 	});
 })
 
+//Just get one card onto the page
+var $board=$('#board');
+var card = function (){
+	for (var i=0; i<52; i++){
+		var $card=$('<div>');
+		$card.html('img src="2_of_clubs.png"/>');
+		$board.append($card);
+	}
+};
 
-}
-//Make a function that creates the board and shows the cards when the button is clicked: 
 
 
 
@@ -41,6 +48,25 @@ $(document).ready(function(){
 //var pickUp = function(){
 //	var folder = "" //now to have my cards appear from the folder and show on the page
 //	var randomCards=Math.random();
+//var $board=$('#board');
+//$cards.click(function(){
+	//for (var i=0; i<52; i++){
+		//var $card=$('<div>');
+		//$card.html('img src="2_of_clubs.png"/>');
+		//$board.append($card);
+	//}
+
+//Take 2--it still didn't work by the way: 
+//var $board=$('#board');
+//var card = function (){
+	//for (var i=0; i<52; i++){
+		//var $card=$('<div>');
+		//$card.html('img src="2_of_clubs.png"/>');
+		//$board.append($card);
+	//}
+///};
+
+//});---------I was trying to put just one card on the board. I referred back to past homework to try to get this to work
 
 //$(document).ready(function(){
 //	console.log("Play");
