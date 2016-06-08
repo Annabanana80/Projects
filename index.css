@@ -40,3 +40,10 @@ button {
 	max-width: 1000px;
 	max-height: 1000px;
 }
+
+.card {
+	width: 100px;
+	height: 100px;
+	backround-repeat: no-repeat;
+	background-size: contain;
+}

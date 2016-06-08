@@ -12,15 +12,22 @@
 //To win, the player must click and pick up all of the cards before the timer hits 00:00:00.
 $(document).ready(function(){
 	$('button').click(function(){  //this ensures that my button works. It worked!
-	var $board=$('#board');
-	var card = function (){
-	for (var i=0; i<52; i++){
-		var $card=$('<div>');
-		$card.html('img src="2_of_clubs.png"/>');
-		$board.append($card);
-	}
-};	
+		console.log("Play");
+
 	});
+	var card = $('#card');
+	for (var i = 2; i < 10; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
+		newCard.addClass('card');
+		card.append(newCard);
+	};
+	for (var i=0; i< aces.length; i++) {
+		var aces = $('<div>');
+		aces.css('background-image', 'url(PlayingCards/PNG/ace_of' + i + '.png)');
+		aces.addClass('card');
+		card.append(aces);
+	}
 })
 
 //Just get one card onto the page
@@ -31,9 +38,7 @@ $(document).ready(function(){
 
 
 
-
-
-
+       
 
 
 
@@ -65,6 +70,21 @@ $(document).ready(function(){
 		//$board.append($card);
 	//}
 ///};
+//Take 3--Why? I thought that by moving this up there, that with the click of the button that the card would show. It didn't work.: 
+
+//$(document).ready(function(){
+//	$('button').click(function(){  //this ensures that my button works. It worked!
+//	var $board=$('#board');
+//	var card = function (){
+//	for (var i=0; i<52; i++){
+//		var $card=$('<div>');
+//		$card.html('img src="2_of_clubs.png"/>');
+//		$board.append($card);
+//	}
+//};	
+//	});
+//})
+
 
 //});---------I was trying to put just one card on the board. I referred back to past homework to try to get this to work
 
