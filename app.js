@@ -10,8 +10,11 @@
 	//Cards are generated and thrown randomly onto the page
 	//The timer starts counting down
 //To win, the player must click and pick up all of the cards before the timer hits 00:00:00.
-
-
+$(document).ready(function(){
+	$('button').click(function(){
+		console.log("play me");
+	});
+})
 
 
 
