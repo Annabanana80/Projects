@@ -35,3 +35,4 @@ With the languages I will need to:
 
 Sources so far: 
 Cardpack: http://opengameart.org/content/playing-cards-vector-png
+Background image: https://www.pinterest.com/pin/75364993739177892/ and graphicdesign.stackexchange.com
