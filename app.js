@@ -40,11 +40,11 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-
-}
 	
 });
 })
+
+
 
 
 //Okay...try to make the cards clickable and go to the discard pile...
@@ -62,6 +62,15 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
+//In this instance, I tried to just put in alerts that activated with the clicks because I couldn't get the cards
+//to click. This, of course, didn't work. 
+//function alert() {
+//		alert("pick them up!");
+//	};
+//	function alert2(){
+//		alert("keep trying ha ha");
+//	} timer 1000;
+
 
 //source: http://www.techigniter.in/tutorials/animating-playing-cards-using-jquery-and-css-part-1/
 //This is yet another failed attempt at making my cards animate and go into at least one position:
