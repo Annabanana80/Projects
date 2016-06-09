@@ -41,6 +41,9 @@ $(document).ready(function(){
 		card.append(newCard);
 	};
 
+});
+})
+
 
 //create the timer--saving you for later...
 
