@@ -40,15 +40,7 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-//my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
-	function random (){
-		for (var i=0; i<53; i++){
-			$('#card')= Math.floor(Math.random() * newCard.length);
-		}
-	};
 
-	});
-})
 
 //create the timer--saving you for later...
 
@@ -74,6 +66,15 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
+//my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
+//	function random (){
+//		for (var i=0; i<53; i++){
+//			$('#card')= Math.floor(Math.random() * newCard.length);
+//		}
+//	};
+
+//	});
+//})
 //Now I need to write code for my cards and my timer. 
 //I will first write code for my cards to come onto the page when the button is clicked.
 //var pickUp = function(){
