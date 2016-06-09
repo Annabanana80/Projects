@@ -14,6 +14,7 @@ $(document).ready(function(){
 	$('button').click(function(){  //this ensures that my button works. It worked!
 		console.log("Play");
 	var card = $('#card');
+//The following puts the cards on the board. 14 is used because there are 13 cards in each suit:
 	for (var i = 1; i < 14; i++) {
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
@@ -39,11 +40,23 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
+//my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
+	function random (){
+		for (var i=0; i<53; i++){
+			$('#card')= Math.floor(Math.random() * 52);
+		}
+	};
 
 	});
 })
 
-//Just get one card onto the page
+//create the timer--saving you for later...
+
+///var timer = function (time){
+///	var display = $('#timer');
+///	display.innerHTML= time;
+
+///}
 
 
 
