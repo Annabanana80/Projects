@@ -43,7 +43,7 @@ $(document).ready(function(){
 //my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
 	function random (){
 		for (var i=0; i<53; i++){
-			$('#card')= Math.floor(Math.random() * 52);
+			$('#card')= Math.floor(Math.random() * newCard.length);
 		}
 	};
 
