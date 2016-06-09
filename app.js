@@ -40,10 +40,15 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-
+	
 });
 })
 
+
+//Okay...try to make the cards clickable and go to the discard pile...
+
+
+	//.remove($('#' + $card)); 
 
 //create the timer--saving you for later...
 
@@ -69,6 +74,12 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
+//my failed attempt at making my cards clickable to go into the discard pile:
+//var newCard = $('#card');
+//		var $discard = $('#discard');
+//		$discard.append('<div id=' + $card + '>' + $card + '</div>');
+
+
 //my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
 //	function random (){
 //		for (var i=0; i<53; i++){
