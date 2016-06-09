@@ -15,28 +15,47 @@ $(document).ready(function(){
 		console.log("Play");
 	var card = $('#card');
 //The following puts the cards on the board. 14 is used because there are 13 cards in each suit:
-	for (var i = 1; i < 14; i++) {
+	var cardSort = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
+	// Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+	function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i -= 1) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
+	shuffle(cardSort);
+	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
+	for (var i = 0; i < 13; i++) {
 		var newCard = $('<div>');
-		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_clubs.png)');
 		newCard.addClass('card');
 		card.append(newCard);
 	};
 	var card = $('#card');
-	for (var i = 1; i < 14; i++) {
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
 		var newCard = $('<div>');
-		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_diamonds.png)');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_diamonds.png)');
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-	for (var i = 1; i < 14; i++) {
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
+		
 		var newCard = $('<div>');
-		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_spades.png)');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_spades.png)');
 		newCard.addClass('card');
 		card.append(newCard);
 	};
-	for (var i = 1; i < 14; i++) {
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
+		
 		var newCard = $('<div>');
-		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_hearts.png)');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_hearts.png)');
 		newCard.addClass('card');
 		card.append(newCard);
 	};
@@ -48,7 +67,7 @@ $(document).ready(function(){
 
 
 //Okay...try to make the cards clickable and go to the discard pile...
-
+//see attempts below. 
 
 	
 
