@@ -40,6 +40,8 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		card.append(newCard);
 	};
+
+}
 	
 });
 })
@@ -48,7 +50,7 @@ $(document).ready(function(){
 //Okay...try to make the cards clickable and go to the discard pile...
 
 
-	//.remove($('#' + $card)); 
+	
 
 //create the timer--saving you for later...
 
@@ -59,21 +61,26 @@ $(document).ready(function(){
 ///}
 
 
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
 //code that didn't work/land of rejected code:
+
+//source: http://www.techigniter.in/tutorials/animating-playing-cards-using-jquery-and-css-part-1/
+//This is yet another failed attempt at making my cards animate and go into at least one position:
+//I copied and pasted the code as is to see if it would work for quality control purposes. Of course it didn't:
+//function animate_card(deg){
+//	var start = 0;
+//	var end = deg;
+//	var step = deg/total_cards;
+//	var angle = 0;
+//	$('.card').each(function(){
+//		$(this).css({
+//					'transform' : 'rotate('+ angle +'deg)',
+//					'-webkit-transform' : 'rotate('+ angle +'deg)',
+//					'-moz-transform' : 'rotate('+ angle +'deg)',
+//					'-ms-transform' : 'rotate('+ angle +'deg)',
+//		});
+//		angle += step;
+//	});
+//} If this did work, the source was of course, going to be cited.
 //my failed attempt at making my cards clickable to go into the discard pile:
 //var newCard = $('#card');
 //		var $discard = $('#discard');
