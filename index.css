@@ -46,7 +46,6 @@ button {
 	height: 100px;
 	backround-repeat: no-repeat;
 	background-size: contain;
-	transition: random;
 }
 #discard {
 	width: 68px;
@@ -55,4 +54,11 @@ button {
 	background-color: deeppink;
 	display: block;
 	float: right;
+}
+.card-moved {
+	width: 68px;
+	height: 100px;
+	backround-repeat: no-repeat;
+	background-size: contain;
+	transform: translateX(200px);
 }

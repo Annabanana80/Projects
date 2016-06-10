@@ -27,12 +27,20 @@ $(document).ready(function(){
         a[j] = x;
     }
 }
+
 	shuffle(cardSort);
 	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
 	for (var i = 0; i < 13; i++) {
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_clubs.png)');
 		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+			var x = Math.floor(Math.random() * 200) + 100;
+		$(this).css('transform', 'translateX('+ x +'px)');
+	//		$(this).addClass('card-moved');
+	//		$discard.append(this);
+		})
 		card.append(newCard);
 	};
 	var card = $('#card');
@@ -41,6 +49,13 @@ $(document).ready(function(){
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_diamonds.png)');
 		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+			var x = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
+		$(this).css('transform', 'rotateZ('+ x +'px)');
+	//		$discard.append(this);
+		})
 		card.append(newCard);
 	};
 	shuffle(cardSort);
@@ -49,6 +64,12 @@ $(document).ready(function(){
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_spades.png)');
 		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+			var x = Math.floor(Math.random() * 200) + 100;
+		$(this).css('transform', 'translateX('+ x +'px)');
+	//		$discard.append(this);
+		})
 		card.append(newCard);
 	};
 	shuffle(cardSort);
@@ -57,19 +78,18 @@ $(document).ready(function(){
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_hearts.png)');
 		newCard.addClass('card');
-		var $discard = $('discard');
-
-		newCard.click(function(event){
-			discard.append(this);
+		var $discard = $('#discard');
+		newCard.click(function(){
+			var x = Math.floor(Math.random() * 200) + 100;
+		$(this).css('transform', 'translateX('+ x +'px)');
+	//	$discard.append(this);
 		})
-
-
 		card.append(newCard);
-	};
-	//adding a click even to the cards. The cards will append to the discard pile. 
-	
-})
+		};
+			//adding a click even to the cards. The cards will append to the discard pile. 
+	})
 });
+
 
 
 
@@ -88,7 +108,10 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
-//In this instance, I tried to just put in alerts that activated with the clicks because I couldn't get the cards
+
+//Tried to incorporate code from this site to animate the cards: https://github.com/vineetgarg90/playing-cards/blob/master/js/script.js
+//It didn't work. 
+///In this instance, I tried to just put in alerts that activated with the clicks because I couldn't get the cards
 //to click. This, of course, didn't work. 
 //function alert() {
 //		alert("pick them up!");
