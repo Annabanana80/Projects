@@ -57,17 +57,24 @@ $(document).ready(function(){
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_hearts.png)');
 		newCard.addClass('card');
+		var $discard = $('discard');
+
+		newCard.click(function(event){
+			discard.append(this);
+		})
+
+
 		card.append(newCard);
 	};
+	//adding a click even to the cards. The cards will append to the discard pile. 
 	
-});
 })
+});
 
 
 
 
-//Okay...try to make the cards clickable and go to the discard pile...
-//see attempts below. 
+
 
 	
 
