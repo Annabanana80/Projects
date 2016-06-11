@@ -20,17 +20,16 @@ $(document).ready(function(){
  Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
 	function shuffle(a) {
     var j, x, i;
+    var degree = Math.round( Math.random() * 100 ) * card[ Math.round(Math.random() * 20) ]
   for (i = a.length; i; i -= 1) {
        j = Math.floor(Math.random() * i);
        x = a[i - 1];
         a[i - 1] = a[j];
        a[j] = x;
+        $(this).css({transform: 'rotate('+ degree + 'deg)'})
        //source: http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery.shtml
-       var degree = Math.floor( Math.random() * 30 ) * cardSort[ Math.round(Math.random() * 1) ]
-       $(this).css({transform: 'rotate('+ degree + 'deg)'})
     }
-}
-
+} 
 	shuffle(cardSort);
 	
 	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
@@ -57,7 +56,7 @@ $(document).ready(function(){
 	//		var rotate = Math.floor(Math.random() * 200) + 100;
 	//	$(this).css('transform', 'translateX('+ x +'px)');
 	//	$(this).css('transform', 'translateY('+ y + 'px)');
-	//	$(this).css('transform', 'rotate('+ rotate +'deg)');
+	//	$(this).css('transform', 'rotate('+ rotate +'deg)'); This didn't work either. Individually, it works.
 			$discard.append(this);
 		})
 		card.append(newCard);
@@ -94,11 +93,7 @@ $(document).ready(function(){
 })
 })
 
-//work in progress--setting it up so that the cards go in different directions
 
-
-
-	
 
 //create the timer--saving you for later...
 
