@@ -50,15 +50,7 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
-			for (var i =0;i<cardSort.length; i++){
-	newCard[i] = Math.floor(Math.random() * 200) + 100;
-	var degree = 0;
-	$(this).css({
-		'transform: translateX('+ degree +'px)';
-		'transform: translateY('+ degree +'px)',
-		'transform: rotate('+ degree + 'deg)',
-	})
-}
+
 	//		var x = Math.floor(Math.random() * 200) + 100;
 	//		var y = Math.floor(Math.random() * 200) + 100;
 	//		var rotate = Math.floor(Math.random() * 200) + 100;
@@ -114,7 +106,7 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
-//Failed attempt at trying to get code to work AGAIN!: 
+//Failed attempt at trying to get code to work AGAIN! Tried this in the diamonds section and it didn't work there either: 
 //for (var i =0;i<cardSort.length; i++){
 //	newCard[i] = Math.floor(Math.random() * 200) + 100;
 //	var degree = 0;
