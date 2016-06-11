@@ -36,12 +36,8 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
-			var x = Math.floor(Math.random() * 200) + 100;
-			$(this).css('transform', 'translateX('+ x +'px)'||'translateY('+ x + 'px)'||'rotateZ('+ x +'deg)');
-	//	$(this).css('transform', 'translateX('+ x +'px)');
-	//		$(this).addClass('card-moved');
-	//		$discard.append(this);
-		})
+			$discard.append(this);
+			})
 		card.append(newCard);
 	};
 	var card = $('#card');
