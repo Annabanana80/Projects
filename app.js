@@ -37,7 +37,8 @@ $(document).ready(function(){
 		var $discard = $('#discard');
 		newCard.click(function(){
 			var x = Math.floor(Math.random() * 200) + 100;
-		$(this).css('transform', 'translateX('+ x +'px)');
+			$(this).css('transform', 'translateX('+ x +'px)'||'translateY('+ x + 'px)'||'rotateZ('+ x +'deg)');
+	//	$(this).css('transform', 'translateX('+ x +'px)');
 	//		$(this).addClass('card-moved');
 	//		$discard.append(this);
 		})
@@ -51,9 +52,12 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
-			var x = Math.floor(Math.random() * 200) + 100;
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//		var y = Math.floor(Math.random() * 200) + 100;
+	//		var rotate = Math.floor(Math.random() * 200) + 100;
 	//	$(this).css('transform', 'translateX('+ x +'px)');
-		$(this).css('transform', 'rotateZ('+ x +'px)');
+	//	$(this).css('transform', 'translateY('+ y + 'px)');
+	//	$(this).css('transform', 'rotate('+ rotate +'deg)');
 	//		$discard.append(this);
 		})
 		card.append(newCard);
@@ -66,8 +70,8 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
-			var x = Math.floor(Math.random() * 200) + 100;
-		$(this).css('transform', 'translateX('+ x +'px)');
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
 	//		$discard.append(this);
 		})
 		card.append(newCard);
@@ -80,8 +84,8 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
-			var x = Math.floor(Math.random() * 200) + 100;
-		$(this).css('transform', 'translateX('+ x +'px)');
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
 	//	$discard.append(this);
 		})
 		card.append(newCard);
