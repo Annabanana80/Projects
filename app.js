@@ -26,9 +26,24 @@ $(document).ready(function(){
         a[i - 1] = a[j];
         a[j] = x;
     }
+   Function goNuts(a) {
+var x = Math.floor(Math.random() * 200) + 100;
+	$(this).css('transform', 'translateX('+ x +'px)'); 
+var y = Math.floor(Math.random() * 200) + 100;
+	$(this).css('transform','translateY('+ x + 'px)');
+var z =Math.floor(Math.random() * 200) +100;
+	$(this).css('transform','rotateZ('+ x +'deg)');
+	for (i = a.length; i; i -= 1) {
+		x = Math.floor(Math.random() * y);
+        y = a[i - 1];
+        a[i - 1] = a[z];
+        a[j] = z;
+}
+}
 }
 
 	shuffle(cardSort);
+	goNuts(cardSort);
 	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
 	for (var i = 0; i < 13; i++) {
 		var newCard = $('<div>');
@@ -37,7 +52,7 @@ $(document).ready(function(){
 		var $discard = $('#discard');
 		newCard.click(function(){
 			$discard.append(this);
-			})
+		})
 		card.append(newCard);
 	};
 	var card = $('#card');
@@ -54,7 +69,7 @@ $(document).ready(function(){
 	//	$(this).css('transform', 'translateX('+ x +'px)');
 	//	$(this).css('transform', 'translateY('+ y + 'px)');
 	//	$(this).css('transform', 'rotate('+ rotate +'deg)');
-	//		$discard.append(this);
+			$discard.append(this);
 		})
 		card.append(newCard);
 	};
@@ -68,7 +83,7 @@ $(document).ready(function(){
 		newCard.click(function(){
 	//		var x = Math.floor(Math.random() * 200) + 100;
 	//	$(this).css('transform', 'translateX('+ x +'px)');
-	//		$discard.append(this);
+			$discard.append(this);
 		})
 		card.append(newCard);
 	};
@@ -92,12 +107,6 @@ $(document).ready(function(){
 
 
 //work in progress--setting it up so that the cards go in different directions
-var x = Math.floor(Math.random() * 200) + 100;
-	$(this).css('transform', 'translateX('+ x +'px)'); 
-var y = Math.floor(Math.random() * 200) + 100;
-	$(this).css('transform','translateY('+ x + 'px)');
-var z =Math.floor(Math.random() * 200) +100;
-	$(this).css('transform','rotateZ('+ x +'deg)');
 
 
 
