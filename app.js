@@ -25,10 +25,18 @@ $(document).ready(function(){
        x = a[i - 1];
         a[i - 1] = a[j];
        a[j] = x;
-       var degree = Math.round( Math.random() * 100 ) * card[ Math.round(Math.random() * 20) ]
-        $(this).css({transform: 'rotate('+ degree + 'deg)'});
        //source: http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery.shtml
     }
+    for (var i =0;i<cardSort.length; i++){
+	newCard[i] = Math.floor(Math.random() * 200) + 100;
+	var degree = 0;
+	$(this).css({
+		'transform: translateX('+ degree +'px)';
+		'transform: translateY('+ degree +'px)',
+		'transform: rotate('+ degree + 'deg)',
+
+	})
+}
 } 
 	shuffle(cardSort);
 	
@@ -92,6 +100,7 @@ $(document).ready(function(){
 			//adding a click even to the cards. The cards will append to the discard pile. 
 })
 })
+
 
 
 
