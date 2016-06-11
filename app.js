@@ -17,33 +17,19 @@ $(document).ready(function(){
 //The following puts the cards on the board. 14 is used because there are 13 cards in each suit:
 	var cardSort = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
-	// Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+ Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
 	function shuffle(a) {
     var j, x, i;
-    for (i = a.length; i; i -= 1) {
-        j = Math.floor(Math.random() * i);
-        x = a[i - 1];
+  for (i = a.length; i; i -= 1) {
+       j = Math.floor(Math.random() * i);
+       x = a[i - 1];
         a[i - 1] = a[j];
-        a[j] = x;
+       a[j] = x;
     }
-var goNuts =function(a) {
-var x = Math.floor(Math.random() * 200) + 100;
-	$(this).css('transform', 'translateX('+ x +'px)'); 
-var y = Math.floor(Math.random() * 200) + 100;
-	$(this).css('transform','translateY('+ x + 'px)');
-var z =Math.floor(Math.random() * 200) +100;
-	$(this).css('transform','rotateZ('+ x +'deg)');
-	for (var i = 0; i< cardSort.length; i ++) {
-		x = Math.floor(Math.random() * i);
-        y = a[i - 1];
-        a[i - 1] = a[z];
-        a[j] = z;
-}
-}
 }
 
 	shuffle(cardSort);
-	goNuts(cardSort);
+	
 	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
 	for (var i = 0; i < 13; i++) {
 		var newCard = $('<div>');
@@ -100,11 +86,10 @@ var z =Math.floor(Math.random() * 200) +100;
 		$discard.append(this);
 		})
 		card.append(newCard);
-		};
+	};
 			//adding a click even to the cards. The cards will append to the discard pile. 
-	})
-});
-
+})
+})
 
 //work in progress--setting it up so that the cards go in different directions
 
