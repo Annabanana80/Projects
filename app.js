@@ -26,7 +26,7 @@ $(document).ready(function(){
         a[i - 1] = a[j];
        a[j] = x;
        //source: http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery.shtml
-       var degree = Math.round( Math.random() * 30 ) * cardSort[ Math.round(Math.random() * 1) ]
+       var degree = Math.floor( Math.random() * 30 ) * cardSort[ Math.round(Math.random() * 1) ]
        $(this).css({transform: 'rotate('+ degree + 'deg)'})
     }
 }
