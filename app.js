@@ -26,15 +26,15 @@ $(document).ready(function(){
         a[i - 1] = a[j];
         a[j] = x;
     }
-   Function goNuts(a) {
+var goNuts =function(a) {
 var x = Math.floor(Math.random() * 200) + 100;
 	$(this).css('transform', 'translateX('+ x +'px)'); 
 var y = Math.floor(Math.random() * 200) + 100;
 	$(this).css('transform','translateY('+ x + 'px)');
 var z =Math.floor(Math.random() * 200) +100;
 	$(this).css('transform','rotateZ('+ x +'deg)');
-	for (i = a.length; i; i -= 1) {
-		x = Math.floor(Math.random() * y);
+	for (var i = 0; i< cardSort.length; i ++) {
+		x = Math.floor(Math.random() * i);
         y = a[i - 1];
         a[i - 1] = a[z];
         a[j] = z;
