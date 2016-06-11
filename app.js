@@ -27,16 +27,7 @@ $(document).ready(function(){
        a[j] = x;
        //source: http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery.shtml
     }
-    for (var i =0;i<cardSort.length; i++){
-	newCard[i] = Math.floor(Math.random() * 200) + 100;
-	var degree = 0;
-	$(this).css({
-		'transform: translateX('+ degree +'px)';
-		'transform: translateY('+ degree +'px)',
-		'transform: rotate('+ degree + 'deg)',
-
-	})
-}
+    
 } 
 	shuffle(cardSort);
 	
@@ -59,6 +50,15 @@ $(document).ready(function(){
 		newCard.addClass('card');
 		var $discard = $('#discard');
 		newCard.click(function(){
+			for (var i =0;i<cardSort.length; i++){
+	newCard[i] = Math.floor(Math.random() * 200) + 100;
+	var degree = 0;
+	$(this).css({
+		'transform: translateX('+ degree +'px)';
+		'transform: translateY('+ degree +'px)',
+		'transform: rotate('+ degree + 'deg)',
+	})
+}
 	//		var x = Math.floor(Math.random() * 200) + 100;
 	//		var y = Math.floor(Math.random() * 200) + 100;
 	//		var rotate = Math.floor(Math.random() * 200) + 100;
@@ -114,7 +114,17 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
-
+//Failed attempt at trying to get code to work AGAIN!: 
+//for (var i =0;i<cardSort.length; i++){
+//	newCard[i] = Math.floor(Math.random() * 200) + 100;
+//	var degree = 0;
+//	$(this).css({
+//		'transform: translateX('+ degree +'px)';
+//		'transform: translateY('+ degree +'px)',
+//		'transform: rotate('+ degree + 'deg)',
+//
+//	})
+//}
 //Tried to incorporate code from this site to animate the cards: https://github.com/vineetgarg90/playing-cards/blob/master/js/script.js
 //It didn't work. 
 ///In this instance, I tried to just put in alerts that activated with the clicks because I couldn't get the cards
