@@ -82,7 +82,7 @@ $(document).ready(function(){
 		newCard.click(function(){
 	//		var x = Math.floor(Math.random() * 200) + 100;
 	//	$(this).css('transform', 'translateX('+ x +'px)');
-	//	$discard.append(this);
+		$discard.append(this);
 		})
 		card.append(newCard);
 		};
@@ -91,8 +91,13 @@ $(document).ready(function(){
 });
 
 
-
-
+//work in progress--setting it up so that the cards go in different directions
+var x = Math.floor(Math.random() * 200) + 100;
+	$(this).css('transform', 'translateX('+ x +'px)'); 
+var y = Math.floor(Math.random() * 200) + 100;
+	$(this).css('transform','translateY('+ x + 'px)');
+var z =Math.floor(Math.random() * 200) +100;
+	$(this).css('transform','rotateZ('+ x +'deg)');
 
 
 
