@@ -25,7 +25,7 @@ $(document).ready(function(){
        x = a[i - 1];
         a[i - 1] = a[j];
        a[j] = x;
-       //source: http://www.javascriptkit.com/dhtmltutors/css3-transitions-and-jquery.shtml
+     
     }
     
 } 
