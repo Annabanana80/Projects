@@ -37,8 +37,13 @@ button {
 	font-family: 'Monofett', cursive;
 }
 #board{
+<<<<<<< HEAD
 	max-width: 1000px;
 	max-height: 1000px;
+=======
+	max-width: 600px;
+	max-height: 600px;
+>>>>>>> master
 }
 
 .card {
@@ -46,4 +51,21 @@ button {
 	height: 100px;
 	backround-repeat: no-repeat;
 	background-size: contain;
+<<<<<<< HEAD
+=======
+}
+#discard {
+	width: 68px;
+	height: 100px;
+	border: 1px solid black;
+	background-color: deeppink;
+	display: block;
+	float: right;
+}
+.card-moved {
+	width: 68px;
+	height: 100px;
+	backround-repeat: no-repeat;
+	background-size: contain;
+>>>>>>> master
 }

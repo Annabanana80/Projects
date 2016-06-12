@@ -15,6 +15,7 @@ $(document).ready(function(){
 		console.log("Play");
 	var card = $('#card');
 //The following puts the cards on the board. 14 is used because there are 13 cards in each suit:
+<<<<<<< HEAD
 	for (var i = 1; i < 14; i++) {
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
@@ -49,6 +50,88 @@ $(document).ready(function(){
 
 	});
 })
+=======
+	var cardSort = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+
+ Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+	function shuffle(a) {
+    var j, x, i;
+  for (i = a.length; i; i -= 1) {
+       j = Math.floor(Math.random() * i);
+       x = a[i - 1];
+        a[i - 1] = a[j];
+       a[j] = x;
+     
+    }
+    
+} 
+	shuffle(cardSort);
+	
+	//after shuffling, cardSort will be [5,1,8,3,10,2,13..etc]
+	for (var i = 0; i < 13; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_clubs.png)');
+		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+			$discard.append(this);
+		})
+		card.append(newCard);
+	};
+	var card = $('#card');
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_diamonds.png)');
+		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//		var y = Math.floor(Math.random() * 200) + 100;
+	//		var rotate = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
+	//	$(this).css('transform', 'translateY('+ y + 'px)');
+	//	$(this).css('transform', 'rotate('+ rotate +'deg)'); This didn't work either. Individually, it works.
+			$discard.append(this);
+		})
+		card.append(newCard);
+	};
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
+		
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_spades.png)');
+		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
+			$discard.append(this);
+		})
+		card.append(newCard);
+	};
+	shuffle(cardSort);
+	for (var i = 0; i < 13; i++) {
+		
+		var newCard = $('<div>');
+		newCard.css('background-image', 'url(PlayingCards/PNG/' +  cardSort[i] +'_of_hearts.png)');
+		newCard.addClass('card');
+		var $discard = $('#discard');
+		newCard.click(function(){
+	//		var x = Math.floor(Math.random() * 200) + 100;
+	//	$(this).css('transform', 'translateX('+ x +'px)');
+		$discard.append(this);
+		})
+		card.append(newCard);
+	};
+			//adding a click even to the cards. The cards will append to the discard pile. 
+})
+})
+
+
+
+>>>>>>> master
 
 //create the timer--saving you for later...
 
@@ -59,6 +142,7 @@ $(document).ready(function(){
 ///}
 
 
+<<<<<<< HEAD
 
 
 
@@ -74,6 +158,65 @@ $(document).ready(function(){
 
 
 //code that didn't work/land of rejected code:
+=======
+//code that didn't work/land of rejected code:
+//Failed attempt at trying to get code to work AGAIN! Tried this in the diamonds section and it didn't work there either: 
+//for (var i =0;i<cardSort.length; i++){
+//	newCard[i] = Math.floor(Math.random() * 200) + 100;
+//	var degree = 0;
+//	$(this).css({
+//		'transform: translateX('+ degree +'px)';
+//		'transform: translateY('+ degree +'px)',
+//		'transform: rotate('+ degree + 'deg)',
+//
+//	})
+//}
+//Tried to incorporate code from this site to animate the cards: https://github.com/vineetgarg90/playing-cards/blob/master/js/script.js
+//It didn't work. 
+///In this instance, I tried to just put in alerts that activated with the clicks because I couldn't get the cards
+//to click. This, of course, didn't work. 
+//function alert() {
+//		alert("pick them up!");
+//	};
+//	function alert2(){
+//		alert("keep trying ha ha");
+//	} timer 1000;
+
+
+//source: http://www.techigniter.in/tutorials/animating-playing-cards-using-jquery-and-css-part-1/
+//This is yet another failed attempt at making my cards animate and go into at least one position:
+//I copied and pasted the code as is to see if it would work for quality control purposes. Of course it didn't:
+//function animate_card(deg){
+//	var start = 0;
+//	var end = deg;
+//	var step = deg/total_cards;
+//	var angle = 0;
+//	$('.card').each(function(){
+//		$(this).css({
+//					'transform' : 'rotate('+ angle +'deg)',
+//					'-webkit-transform' : 'rotate('+ angle +'deg)',
+//					'-moz-transform' : 'rotate('+ angle +'deg)',
+//					'-ms-transform' : 'rotate('+ angle +'deg)',
+//		});
+//		angle += step;
+//	});
+//} If this did work, the source was of course, going to be cited.
+//my failed attempt at making my cards clickable to go into the discard pile:
+//var newCard = $('#card');
+//		var $discard = $('#discard');
+//		$discard.append('<div id=' + $card + '>' + $card + '</div>');
+
+
+//my attempt at making the cards fall randomly onto the page source: http://stackoverflow.com/questions/20899167/how-to-make-a-random-image-generator-for-website:
+//	function random (){
+//		for (var i=0; i<53; i++){
+//			$('#card')= Math.floor(Math.random() * newCard.length);
+//		}
+//	};
+
+//	});
+//})
+>>>>>>> master
 //Now I need to write code for my cards and my timer. 
 //I will first write code for my cards to come onto the page when the button is clicked.
 //var pickUp = function(){
