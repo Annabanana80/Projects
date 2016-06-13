@@ -16,6 +16,7 @@ $(document).ready(function(){
 	var card = $('#card');
 //The following puts the cards on the board. 14 is used because there are 13 cards in each suit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	for (var i = 1; i < 14; i++) {
 		var newCard = $('<div>');
 		newCard.css('background-image', 'url(PlayingCards/PNG/' +  i +'_of_clubs.png)');
@@ -51,6 +52,8 @@ $(document).ready(function(){
 	});
 })
 =======
+=======
+>>>>>>> master
 	var cardSort = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
  Source : http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
@@ -131,6 +134,9 @@ $(document).ready(function(){
 
 
 
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 
 //create the timer--saving you for later...
@@ -142,6 +148,7 @@ $(document).ready(function(){
 ///}
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -159,6 +166,8 @@ $(document).ready(function(){
 
 //code that didn't work/land of rejected code:
 =======
+=======
+>>>>>>> master
 //code that didn't work/land of rejected code:
 //Failed attempt at trying to get code to work AGAIN! Tried this in the diamonds section and it didn't work there either: 
 //for (var i =0;i<cardSort.length; i++){
@@ -216,6 +225,9 @@ $(document).ready(function(){
 
 //	});
 //})
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 //Now I need to write code for my cards and my timer. 
 //I will first write code for my cards to come onto the page when the button is clicked.

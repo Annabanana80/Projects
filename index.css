@@ -38,8 +38,13 @@ button {
 }
 #board{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	max-width: 1000px;
 	max-height: 1000px;
+=======
+	max-width: 600px;
+	max-height: 600px;
+>>>>>>> master
 =======
 	max-width: 600px;
 	max-height: 600px;
@@ -52,7 +57,10 @@ button {
 	backround-repeat: no-repeat;
 	background-size: contain;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 }
 #discard {
 	width: 68px;
@@ -67,5 +75,8 @@ button {
 	height: 100px;
 	backround-repeat: no-repeat;
 	background-size: contain;
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 }
